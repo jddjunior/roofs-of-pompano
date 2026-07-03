@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROOFS of Pompano | Residential & Commercial Roofing, Pompano Beach FL</title>
+<meta name="description" content="Licensed HVHZ roofing contractor serving Pompano Beach, Coral Springs, Deerfield Beach & Broward County. Free inspections, 24-hour storm response.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Sans+3:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RoofingContractor",
+  "name": "ROOFS of Pompano",
+  "image": "",
+  "telephone": "+1-954-555-0142",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1900 NE 5th Ave",
+    "addressLocality": "Pompano Beach",
+    "addressRegion": "FL",
+    "postalCode": "33060",
+    "addressCountry": "US"
+  },
+  "areaServed": ["Pompano Beach","Coral Springs","Deerfield Beach","Margate","Coconut Creek","Tamarac"],
+  "openingHours": "Mo-Sa 07:00-19:00"
+}
+</script>
+<style>
+  :root{
+    --sand:#EBE3D2;
+    --sand-card:#F6F1E5;
+    --slate:#24303C;
+    --slate-soft:#3D4C5A;
+    --tile:#B0421F;
+    --tile-deep:#8E3417;
+    --gulf:#2C5064;
+    --line: rgba(36,48,60,0.14);
+    --radius: 3px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--sand);
+    color:var(--slate);
+    font-family:'Source Sans 3', sans-serif;
+    font-size:16px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{
+    font-family:'Archivo', sans-serif;
+    font-weight:800;
+    letter-spacing:-0.01em;
+    margin:0;
+    color:var(--slate);
+  }
+  .mono{ font-family:'JetBrains Mono', monospace; }
+  a{ color:inherit; text-decoration:none; }
+  img{max-width:100%;display:block;}
+  .wrap{ max-width:1120px; margin:0 auto; padding:0 24px; }
+  .tile-divider{
+    height:22px; width:100%;
+    background-image: radial-gradient(circle at 11px 0, transparent 11px, var(--sand) 11.5px);
+    background-size: 22px 22px; background-repeat: repeat-x; background-position: top;
+  }
+  .tile-divider.on-slate{ background-image: radial-gradient(circle at 11px 0, transparent 11px, var(--slate) 11.5px); }
+  .tile-divider.on-card{ background-image: radial-gradient(circle at 11px 0, transparent 11px, var(--sand-card) 11.5px); }
+  header{ position:sticky; top:0; z-index:40; background:var(--sand); border-bottom:1px solid var(--line); }
+  .header-row{ display:flex; align-items:center; justify-content:space-between; padding:16px 24px; }
+  .logo{ display:flex; align-items:center; gap:10px; font-family:'Archivo'; font-weight:800; font-size:19px; }
+  .logo .mark{ width:30px;height:30px; background:var(--tile); border-radius:2px; position:relative; flex:none; }
+  .logo .mark::after{ content:""; position:absolute; inset:6px; border-top:2px solid var(--sand); border-left:2px solid var(--sand); transform:rotate(45deg); top:10px; left:6px; width:12px; height:12px; }
+  nav{ display:flex; gap:28px; font-size:14.5px; font-weight:600; }
+  nav a:hover{ color:var(--tile); }
+  .nav-cta{ display:flex; align-items:center; gap:10px; }
+  .btn{ display:inline-flex; align-items:center; gap:8px; background:var(--tile); color:#fff; font-weight:700; font-size:14.5px; padding:11px 18px; border-radius:var(--radius); border:none; cursor:pointer; font-family:'Source Sans 3'; }
+  .btn:hover{ background:var(--tile-deep); }
+  .btn.ghost{ background:transparent; color:var(--slate); border:1.5px solid var(--slate); }
+  .btn.ghost:hover{ border-color:var(--tile); color:var(--tile); }
+  .phone-link{ font-weight:700; font-family:'JetBrains Mono'; font-size:14.5px; white-space:nowrap; }
+  @media (max-width: 860px){ nav{ display:none; } }
+  .hero{ background:var(--slate); color:#EDE6D6; position:relative; overflow:hidden; }
+  .hero-inner{ padding:64px 24px 56px; display:grid; grid-template-columns:1.15fr 0.85fr; gap:48px; align-items:center; }
+  .eyebrow{ font-family:'JetBrains Mono'; font-size:12.5px; letter-spacing:.14em; text-transform:uppercase; color:#D9B08C; margin-bottom:16px; display:flex; align-items:center; gap:10px; }
+  .eyebrow::before{ content:""; width:22px; height:1.5px; background:#D9B08C; }
+  .hero h1{ color:#fff; font-size:44px; line-height:1.08; }
+  .hero p.lede{ margin-top:18px; font-size:17.5px; color:#C9D2D8; max-width:46ch; }
+  .hero-ctas{ display:flex; gap:14px; margin-top:30px; flex-wrap:wrap; }
+  .hero .btn.ghost{ color:#EDE6D6; border-color:#5B6976; }
+  .hero .btn.ghost:hover{ border-color:#D9B08C; color:#D9B08C; }
+  .spec-card{ background:#1B242D; border:1px solid #38454F; border-radius:var(--radius); padding:22px 24px; }
+  .spec-card .spec-title{ font-family:'JetBrains Mono'; font-size:11.5px; letter-spacing:.12em; text-transform:uppercase; color:#8FA0AC; margin-bottom:16px; }
+  .spec-row{ display:flex; justify-content:space-between; padding:10px 0; border-top:1px solid #303C46; font-size:14.5px; }
+  .spec-row:first-of-type{ border-top:none; }
+  .spec-row span:first-child{ color:#9FADB8; }
+  .spec-row span:last-child{ font-family:'JetBrains Mono'; font-weight:600; color:#EDE6D6; }
+  @media (max-width: 860px){ .hero-inner{ grid-template-columns:1fr; padding-top:40px; } .hero h1{ font-size:32px; } }
+  section{ padding:64px 24px; }
+  .section-head{ max-width:640px; margin-bottom:40px; }
+  .section-head .eyebrow{ color:var(--tile); }
+  .section-head .eyebrow::before{ background:var(--tile); }
+  .section-head h2{ font-size:30px; }
+  .section-head p{ margin-top:12px; color:var(--slate-soft); font-size:16px; }
+  .services-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  .service-card{ background:var(--sand-card); border:1px solid var(--line); border-radius:var(--radius); padding:26px 24px; }
+  .service-card .num{ font-family:'JetBrains Mono'; font-size:12.5px; color:var(--tile); font-weight:600; }
+  .service-card h3{ font-size:18px; margin-top:12px; }
+  .service-card p{ margin-top:8px; font-size:14.5px; color:var(--slate-soft); }
+  @media (max-width:860px){ .services-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:560px){ .services-grid{ grid-template-columns:1fr; } }
+  .why-wrap{ display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:start; }
+  .why-list{ display:flex; flex-direction:column; gap:22px; }
+  .why-item{ display:flex; gap:16px; }
+  .why-item .n{ font-family:'JetBrains Mono'; font-weight:700; color:var(--tile); font-size:15px; width:30px; flex:none; }
+  .why-item h3{ font-size:16.5px; }
+  .why-item p{ margin-top:5px; color:var(--slate-soft); font-size:14.5px; }
+  .area-card{ background:var(--slate); color:#EDE6D6; border-radius:var(--radius); padding:30px 28px; }
+  .area-card h3{ color:#fff; font-size:16px; }
+  .area-list{ display:flex; flex-wrap:wrap; gap:9px; margin-top:16px; }
+  .area-pill{ font-family:'JetBrains Mono'; font-size:12.5px; border:1px solid #445260; padding:6px 11px; border-radius:20px; color:#C9D2D8; }
+  @media (max-width:860px){ .why-wrap{ grid-template-columns:1fr; } }
+  .reviews-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  .review-card{ background:#fff; border:1px solid var(--line); border-radius:var(--radius); padding:24px; }
+  .stars{ color:var(--tile); font-size:14px; letter-spacing:2px; }
+  .review-card p{ margin-top:14px; font-size:14.5px; color:var(--slate-soft); }
+  .review-who{ margin-top:16px; font-size:13.5px; font-weight:600; font-family:'JetBrains Mono'; color:var(--slate); }
+  @media (max-width:860px){ .reviews-grid{ grid-template-columns:1fr; } }
+  .faq-item{ border-bottom:1px solid var(--line); }
+  .faq-q{ width:100%; text-align:left; background:none; border:none; cursor:pointer; padding:20px 0; display:flex; justify-content:space-between; align-items:center; font-family:'Archivo'; font-weight:700; font-size:16px; color:var(--slate); }
+  .faq-q .plus{ font-family:'JetBrains Mono'; color:var(--tile); font-size:18px; flex:none; margin-left:16px; }
+  .faq-a{ max-height:0; overflow:hidden; transition:max-height .25s ease; }
+  .faq-a p{ padding:0 0 20px; color:var(--slate-soft); font-size:14.5px; max-width:65ch; }
+  .faq-item.open .faq-a{ max-height:220px; }
+  .faq-item.open .plus{ transform:rotate(45deg); }
+  .final-cta{ background:var(--tile); color:#fff; text-align:center; padding:64px 24px; border-radius:var(--radius); }
+  .final-cta h2{ color:#fff; font-size:30px; }
+  .final-cta p{ margin-top:12px; color:#F5DCCB; }
+  .final-cta .hero-ctas{ justify-content:center; margin-top:26px; }
+  .final-cta .btn.ghost{ color:#fff; border-color:#E3A282; }
+  footer{ background:var(--slate); color:#9FADB8; padding:44px 24px 100px; font-size:13.5px; }
+  .footer-wrap{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:24px; }
+  footer .logo{ color:#EDE6D6; }
+  footer a:hover{ color:#EDE6D6; }
+  .sticky-call{ position:fixed; bottom:0; left:0; right:0; z-index:50; background:var(--tile); color:#fff; display:none; align-items:center; justify-content:center; gap:10px; padding:14px; font-weight:700; font-size:15px; font-family:'Source Sans 3'; }
+  @media (max-width:640px){ .sticky-call{ display:flex; } body{ padding-bottom:56px; } }
+  .placeholder-note{ background:#FFF6E5; border:1px solid #E8CFA0; color:#7A5A20; font-size:12.5px; padding:10px 16px; text-align:center; font-family:'JetBrains Mono'; }
+</style>
+</head>
+<body>
+<div class="placeholder-note">DEMO BUILD — business details, reviews & license # below are placeholders. Swap in ROOFS of Pompano's real NAP, license, and reviews before launch.</div>
+<header>
+  <div class="header-row wrap">
+    <div class="logo"><span class="mark"></span> ROOFS OF POMPANO</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#area">Service Area</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="phone-link" href="tel:19545550142">(954) 555-0142</a>
+      <a class="btn" href="#contact">Free Inspection</a>
+    </div>
+  </div>
+</header>
+<section class="hero">
+  <div class="hero-inner wrap">
+    <div>
+      <div class="eyebrow">Owner-Permitted &middot; Broward County</div>
+      <h1>The name on your permit is the name on your warranty, ten years from now.</h1>
+      <p class="lede">We're not a referral site that connects you with "a contractor." The person who inspects your roof is the license holder who's legally accountable for it — same name, same business, still here when your warranty needs honoring.</p>
+      <div class="hero-ctas">
+        <a class="btn" href="#contact">Get a free inspection</a>
+        <a class="btn ghost" href="tel:19545550142">Call (954) 555-0142</a>
+      </div>
+    </div>
+    <div class="spec-card">
+      <div class="spec-title">Contractor Spec Sheet</div>
+      <div class="spec-row"><span>Permits pulled by</span><span>J. Reyes, License CCC000000</span></div>
+      <div class="spec-row"><span>Same business name since</span><span>2011</span></div>
+      <div class="spec-row"><span>Wind zone rating</span><span>HVHZ / 180mph</span></div>
+      <div class="spec-row"><span>Who inspects your roof</span><span>The license holder</span></div>
+      <div class="spec-row"><span>Google rating</span><span>4.9 (312)</span></div>
+      <div class="spec-row"><span>Insurance</span><span>GL + Workers Comp</span></div>
+    </div>
+  </div>
+</section>
+<div class="tile-divider on-slate"></div>
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">What we do</div>
+      <h2>Six services. No upsells you didn't ask for.</h2>
+      <p>Every job starts with an inspection, not a quote pulled from a windshield survey.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card"><div class="num">01</div><h3>Residential Roof Replacement</h3><p>Shingle, tile, or metal — sized and specced for Broward wind loads.</p></div>
+      <div class="service-card"><div class="num">02</div><h3>Roof Repair</h3><p>Leaks, flashing, and localized damage fixed without a full tear-off.</p></div>
+      <div class="service-card"><div class="num">03</div><h3>Storm Damage Repair</h3><p>Post-storm tarping, structural repair, and insurance documentation.</p></div>
+      <div class="service-card"><div class="num">04</div><h3>Commercial Roofing</h3><p>TPO, EPDM, and modified bitumen for retail, office, and multifamily.</p></div>
+      <div class="service-card"><div class="num">05</div><h3>Roof Inspection</h3><p>Free same-day inspections with photo documentation, no obligation.</p></div>
+      <div class="service-card"><div class="num">06</div><h3>Gutter Installation</h3><p>Seamless aluminum gutters sized for South Florida rain volume.</p></div>
+    </div>
+  </div>
+</section>
+<div class="tile-divider on-card"></div>
+<section id="why" style="background:var(--sand-card);">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Why Pompano Beach hires us</div>
+      <h2>Not a referral site. Not a rotating crew. One name, one license, one warranty.</h2>
+    </div>
+    <div class="why-wrap">
+      <div class="why-list">
+        <div class="why-item"><div class="n">01</div><div><h3>The owner pulls every permit personally</h3><p>Not a subcontractor, not a franchise, not whoever's dispatched that week.</p></div></div>
+        <div class="why-item"><div class="n">02</div><div><h3>Same business name since 2011</h3><p>Your workmanship warranty is only as good as whether the company's still around to honor it. We are.</p></div></div>
+        <div class="why-item"><div class="n">03</div><div><h3>You talk to the roofer, not a call center</h3><p>Plenty of "roofing" sites in Broward just forward your info to someone else. This isn't one of them.</p></div></div>
+        <div class="why-item"><div class="n">04</div><div><h3>Free same-day inspections</h3><p>Photo-documented, no pressure, no obligation to book.</p></div></div>
+        <div class="why-item"><div class="n">05</div><div><h3>24-hour emergency storm response</h3><p>Tarping and stabilization dispatched the same day, day or night.</p></div></div>
+      </div>
+      <div id="area" class="area-card">
+        <h3>Service area</h3>
+        <p style="color:#9FADB8; font-size:14px; margin-top:6px;">Broward County, based in Pompano Beach</p>
+        <div class="area-list">
+          <span class="area-pill">Pompano Beach</span>
+          <span class="area-pill">Coral Springs</span>
+          <span class="area-pill">Deerfield Beach</span>
+          <span class="area-pill">Margate</span>
+          <span class="area-pill">Coconut Creek</span>
+          <span class="area-pill">Tamarac</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">In their words</div>
+      <h2>What Broward homeowners say.</h2>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card"><div class="stars">★★★★★</div><p>"Replaced our entire roof in a day and a half. Cleanup was spotless — didn't find a single nail in the yard."</p><div class="review-who">Sandra L. — Coral Springs</div></div>
+      <div class="review-card"><div class="stars">★★★★★</div><p>"Storm knocked out three tiles and they had someone out same day to tarp it before more rain got in."</p><div class="review-who">Marcus T. — Pompano Beach</div></div>
+      <div class="review-card"><div class="stars">★★★★★</div><p>"Handled the whole insurance claim conversation for us. First contractor that didn't disappear after signing."</p><div class="review-who">Denise R. — Deerfield Beach</div></div>
+    </div>
+  </div>
+</section>
+<div class="tile-divider on-card"></div>
+<section id="faq" style="background:var(--sand-card);">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Questions</div>
+      <h2>Before you call, here's what people usually ask.</h2>
+    </div>
+    <div>
+      <div class="faq-item">
+        <button class="faq-q">How much does a roof replacement cost in Pompano Beach? <span class="plus">+</span></button>
+        <div class="faq-a"><p>In this market, asphalt shingle replacement typically runs $5,000–$10,500 and metal roofing $8,000–$30,000, depending on size, pitch, and material. Most jobs take 1–3 days. The free inspection gets you an exact number for your roof, not an estimate off satellite photos.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do you work directly with my insurance company? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Yes. We document damage the way adjusters need it documented and can walk the property with your adjuster if needed.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How fast can someone come out after storm damage? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Emergency tarping and stabilization is dispatched same day. Full repair scheduling depends on the scope of damage.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Is a metal roof worth it in a hurricane zone? <span class="plus">+</span></button>
+        <div class="faq-a"><p>For most Broward homes, yes — metal handles wind uplift and salt air better than shingle over a 25+ year horizon, though upfront cost is higher.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Are you licensed for High-Velocity Hurricane Zone work? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Yes, all installs meet HVHZ wind uplift requirements for Broward County permitting.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Am I actually talking to the roofer, or does this go to someone else? <span class="plus">+</span></button>
+        <div class="faq-a"><p>You're talking to us directly — the license holder who inspects and permits the job. Some "roofing" sites in this area are actually referral services that forward your info to a rotating list of contractors. ROOFS of Pompano isn't one of those.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do you offer financing? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Yes, financing options are available for qualified homeowners — ask during your inspection.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How long does a typical roof replacement take? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Most residential replacements take one to three days depending on size and material.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What areas do you actually service? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Pompano Beach, Coral Springs, Deerfield Beach, Margate, Coconut Creek, and Tamarac.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact">
+  <div class="wrap">
+    <div class="final-cta">
+      <h2>Get a free roof inspection this week.</h2>
+      <p>Photo-documented, no obligation, no pressure to sign anything on the spot.</p>
+      <div class="hero-ctas">
+        <a class="btn" style="background:#fff; color:var(--tile);" href="tel:19545550142">Call (954) 555-0142</a>
+        <a class="btn ghost" href="#">Request inspection online</a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap footer-wrap">
+    <div>
+      <div class="logo">ROOFS OF POMPANO</div>
+      <p style="margin-top:12px; max-width:32ch;">1900 NE 5th Ave, Pompano Beach, FL 33060<br>License CCC000000</p>
+    </div>
+    <div>
+      <p style="color:#EDE6D6; font-weight:600; margin-bottom:10px;">Contact</p>
+      <p><a href="tel:19545550142">(954) 555-0142</a></p>
+      <p><a href="mailto:info@roofsofpompano.com">info@roofsofpompano.com</a></p>
+    </div>
+    <div>
+      <p style="color:#EDE6D6; font-weight:600; margin-bottom:10px;">Service area</p>
+      <p>Pompano Beach &middot; Coral Springs<br>Deerfield Beach &middot; Margate<br>Coconut Creek &middot; Tamarac</p>
+    </div>
+  </div>
+</footer>
+<a href="tel:19545550142" class="sticky-call">Call now — free inspection</a>
+<script>
+  document.querySelectorAll('.faq-q').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.closest('.faq-item');
+      var wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(el){ el.classList.remove('open'); });
+      if(!wasOpen){ item.classList.add('open'); }
+    });
+  });
+</script>
+</body>
+</html>
